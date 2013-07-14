@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
     if (err) throw err;
     console.log(data);
   });
-  response.send(data.toString());
+  response.send(data.toString('ascii'));
 });
 
 var port = process.env.PORT || 5000;
