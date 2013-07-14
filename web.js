@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 
 var app = express.createServer(express.logger());
-var filename = "~/bitstarter/index.html";
+var filename = "index.html";
 
 app.get('/', function(request, response) {
   fs.readFileSync(filename, function (err, data) {
