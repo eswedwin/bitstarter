@@ -6,12 +6,12 @@ var filename = "/app/index.html";
 var data = new Buffer(100);
 
 app.get('/', function(request, response) {
-  fs.readFileSync(filename, encoding ='ascii',function (err, data) {
+  fs.readFileSync(filename, encoding ='utf8',function (err, data) {
     if (err) throw err;
     console.log(data);
     // buf.write(data);
   });
-  response.send(data.toString('ascii'));
+  response.send(data.toString('utf8'));
 });
 
 var port = process.env.PORT || 5000;
