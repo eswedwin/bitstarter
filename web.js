@@ -1,9 +1,15 @@
 var express = require('express');
+var fs = require('fs');
 
 var app = express.createServer(express.logger());
+var filename = "~/bitstarter/index.html";
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+  fs.readFileSync(filename, function (err, data) {
+    if (err) throw err;
+    console.log(data);
+  });
+  response.send(data.toString());
 });
 
 var port = process.env.PORT || 5000;
