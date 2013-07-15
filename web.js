@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
   response.send(
     fs.readFileSync(filename, encoding ='utf8',function (err, data) {
       if (err) {throw err;}
-      console.log(data);
+      //console.log(data);
       return data.toString();})
   );
 });
