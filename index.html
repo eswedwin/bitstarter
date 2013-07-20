@@ -1,102 +1,291 @@
 <!DOCTYPE html>
 <!-- saved from url=(0066)https://spark-public.s3.amazonaws.com/startup/code/bitstarter.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <title>Green Cloud Power</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Arvo:300italic,400italic,500italic,700italic,300,400,500,700,800" rel="stylesheet" type="text/css">
+    <!--prev font here was Open+Sans-->
     <style type="text/css">
+  
+    /* Large desktop */
+    @media (min-width: 980px){
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding-top: 60px;
       }
-      .container {
-        width: 960px;
+      .linediv-l {
+        border-right: 1px white solid;
       }
-      p.lead {
-        padding-top: 15px;
+      .linediv-r {
+        border-left: 1px white solid;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
+    }
+    /* Landscape phones and down */
+    @media (max-width: 480px){
+      .copy {
+        padding: 2.5% 10%;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
-        text-align: center;
+      .linediv-l {
+        border-bottom: 1px white solid;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
+      .linediv-r {
+        border-top: 1px white solid;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
-    </style>
+    }
+
+    /* all form factors */
+
+    /* main body and headings */
+    body {
+      font-family: "Avro", Helvetica, Arial, sans-serif;
+    }
+    .heading, .subheading {
+      font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    p.lead {
+      padding-top: 1.5%;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    
+    /*video pitch and action*/
+    .pitch {
+      padding: 2.5% 0%;
+    }
+    .order: {
+      padding: 2% 0%;
+    }
+    .actions {
+      background-color: #343434;
+      padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+      text-align: center;
+    }
+    .statistics h3, .statistics p {
+      color: white;
+    }
+
+    /* Marketing Copy and footer */
+    .copy {
+      padding_top: 2.5%;
+      padding_bottom: 2.5%;
+      text-align: justify;
+    }
+    .asset {
+      padding: 2.5% 0%;
+    }
+    .footer {
+      color: #cccccc;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 11px;
+    }
+    .footer a {
+      color: #ccccff;
+    }
+  </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
-        </div>
-      </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div> 
-     <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
-          </div>
-          <div class="order">
-            Order
-          </div>
-          <div class="social">
-            Social
-          </div>
-        </div>
-      </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
-        </div>
-      </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketing Section 2
-        </div>
-      </div>
-      <div class="row faq">
-        <div class="span12">
-          FAQ
-        </div>
-      </div>
-      <div class="row footer">
-        <div class="span12">
-          Footer
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class ="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>,<!--/.nav-collapse-->
         </div>
       </div>
     </div>
-  
-
-</body></html>
+    <div class="container">
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Green Cloud PowerStation</h1>
+        </div>
+      </div> 
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead">Getting paid cash while helping save the earth</p>
+        </div>
+      </div>
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://placehold.it/480*300>
+        </div>
+        <div class="span5 actions">
+          <div class="span8 offset2">
+            <div class="statistics">
+              <div class="span4">
+                <div class="linediv-l">
+                  <h3>100</h3>
+                  <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$60,000</h3>
+                  <p>of $500,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                  <h3>10</h3>
+                  <p>days left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span10 offset1">    <!-- progress bar -->
+            <div class ="thermometer progress active">
+              <div class="bar bar-success" style="width: 60%"></div>
+              <div class="bar bar-warning" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="span6 offset3 order">  <!-- button -->
+            <button class="btn-success btn-large">Preorder</button>
+          </div>
+          <div class="span8 offset2 social">  <!-- button -->
+            <button class="btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid section1">    <!--marketing-->
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480*300>
+        </div>
+        <div class= "span5 copy">
+          <p> <!-- Marketing Section 1 -->
+          Real money direct into your email inbox for doing "Nothing".  
+          The power that is automatically switched off on your premises is
+          sold back to the Power Companies during a crisis or daily peak
+          demand to maintain net stability.  This ensures that critical systems
+          and all lights stay on.  The maximum switch off period is limited to
+          two consecutive hours in any 12 hour period.  All the transactions take place 
+          using Bitcoin thus there are no transaction fees.
+          </p>
+          <p>
+          Do you qualify?  HVAC systems are very good candidates for partial switch-off 
+          as they consume large amounts of electicity and the temperatures recover fast when 
+          switched back to full on.  A WAN connection must available on the premises for most 
+          of the communication.  A backup link will use the celluar or satellite networks.
+          Our engineer will visit your site and do a survey of systems, applicability of our
+          system to your requirement and vice-versa, and installation requirements.  A supply
+          contract between us and your company will be set up for a initial period of 3 years. 
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p> <!-- Marketing Section 2 technical -->
+          Our equipment will be installed and maintained on your premises by our installation 
+          technicians and hooked up to your systems.  The payments start immediately (settled daily) 
+          when the system is switched on and could be 1 to 2 percent of your electricity bill 
+          while it is just on standby.  This increases to about 6 percent of the bill if all 
+          availble electricity is sold thus when 25% of maximum demand is shed.  The equipment
+          monitors the total and switched load continuously and determines the energy switched
+          off in a transparent way.
+          </p>
+          <h4>Power Companies:</h4>
+          <p>
+          During a crisis (line trip, line overload, generator failure, etc.) the 
+          cloud power station comes online instantaneous (less than 5 seconds) to
+          make up the shortfall and then keep on generating for up to 2 hours.  It can also
+          be used with tidal power or wind-generators to compensate for sudden dips in the 
+          supply.  
+          </p>
+          <p>
+          The Power Companies pay a facility fee of less than 4% of the cost of a
+          similar sized new base-load generation plant over the three year contract plus a fairly
+          steep price for the energy that is comparable to the cost for peaking PowerStations.  
+          The Power Companies recover some of the money by reselling the power to you 
+          after the crisis or peak at a lower rate.  (All envisaged are recoverable loads.)
+          </p>
+          <h4>Future:</h4>
+          <p>
+          Smaller units to cover smaller clients down to large houses that use mostly
+          electricity for energy source.  (Electric car chargers, electric boilers, underfloor
+          heating, washing machines, driers, dishwashers, etc. are all good candidates
+          </p>
+          <p>
+          This model is different from the smart-grid (and other virtual PowerStations) in that
+          the client immediately receives something substantial back for the inconvience of 
+          waiting or being slightly off the optimal temperature.  
+          </p>
+          <p>
+          Our engineers are experts in BMS, HVAC and industrial
+          systems and can thus advise you to the optimum connection.  Our interest is in fascilitating 
+          the trade and keeping a percentage (about 25% to maintain and pay, the equipment and staff) 
+          of what the power company pays, the remaining 75% goes directly to you.
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480*300>
+        </div>
+      </div>
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                What does HVAC stand for?
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                Heating Ventilation and Air-Conditioning.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Why must the grid supply exactly match the demand?
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                The energy generated in the grid (network) must exactly balance the sum of the energy losses and demand.
+                If the generated energy is higher the generators all speed up causing the frequency and voltage of the
+                grid to increase.  When it is lower the frequency and voltage decreases as the generators cannot keep up 
+                and thus slow down. As all electric motors run at, or nearly at, the same frequency they also slow down
+                causing the demand to increase and a runaway condition to ensue.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p> This work is licensed under the
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/"><strong>cc BY-SA 3.0</strong>
+            </a>, without all the cruft that would otherwise be put at the bottom of the page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
