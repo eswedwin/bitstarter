@@ -3,7 +3,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <head>
     <meta charset="utf-8">
-    <title>Green Cloud Power</title>
+    <title>Cloud Power</title>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -97,6 +97,8 @@
     .footer a {
       color: #ccccff;
     }
+    figcaption { float: right; margin: 2% 0 2% 4%;} 
+
   </style>
   </head>
   <body>
@@ -122,7 +124,7 @@
     <div class="container">
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Green Cloud PowerStation</h1>
+          <h1>Cloud PowerStation</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
@@ -132,8 +134,12 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
+          <!--img class="img-polaroid" src="http://placehold.it/480x300"-->
+          <video src="static/pitch_test_e.mp4" type ="video/mp4" width = "480" height = "300">
+          </video>
+<!--           <img class="img-polaroid" src = "static/tarantula.jpg" alt = "Tarantula Nebula" width = "480" height = "300" >
+          <figcaption>Tarantula Nebula</figcaption>
+    -->   </div>
         <div class="span5 actions">
           <div class="span8 offset2">
             <div class="statistics">
@@ -263,10 +269,24 @@
           <div class="accordion-group">
             <div class="accordion-heading">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                Why must the grid supply exactly match the demand?
+                Why is this model so green?
               </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                This type of system is grid stabilising because of it's nearly instantneous response to any request
+                for extra energy.  The Power Companies need less generators on standby/idle to continuous supply the
+                demand and less generating plant need to be build and/or only the cleanest type of generator run.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                Why must the grid supply exactly match the demand?
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
               <div class="accordion-inner">
                 The energy generated in the grid (network) must exactly balance the sum of the energy losses and demand.
                 If the generated energy is higher the generators all speed up causing the frequency and voltage of the
