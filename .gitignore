@@ -1,8 +1,20 @@
+# Heroku environmental variables, including API keys.
+# https://devcenter.heroku.com/articles/config-vars
+# exclude .env for key safety
+.env
+
+# npm packages
+node_modules
+
+# Mac
+.DS_Store
+
+# Emacs
+*~
+
 #################
 ## Eclipse
 #################
-# exclude .env for key safety
-.env
 
 *.pydevproject
 .project
