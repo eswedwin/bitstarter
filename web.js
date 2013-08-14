@@ -12,9 +12,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
-//var app = express.createServer(express.logger());
-//app.use("/static",express.static(__dirname+"/static"));
-app.set("/static", __dirname + "/static");
+app.use("/static",express.static(__dirname+"/static"));
 
 app.get('/', function(request, response) {
   response.send(
